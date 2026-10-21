@@ -284,6 +284,10 @@
   .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
   @media (max-width: 860px) { .bidform__grid { grid-template-columns: 1fr; } .bidform__grid > label, .bidform__grid > label:nth-child(4), .bidform__grid > label:nth-child(5) { grid-column: auto; } }
 </style>
+<!-- Google Analytics 4 + AMC lead tracking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QX8WHKMVQ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5QX8WHKMVQ');</script>
+<script src="/track.js" defer></script>
 </head>
 <body>
 <div class="sc-grain" aria-hidden="true"></div>
@@ -464,6 +468,8 @@
             <option value="">Choose one</option><option>Construction / final clean</option><option>Commercial cleaning</option><option>Residential cleaning</option><option>Floor scrubbing</option><option>Other / multiple</option></select></label>
           <label for="bf-market">Market<select id="bf-market" name="market" required>
             <option value="">Choose one</option><option>Phoenix, AZ</option><option>Milwaukee, WI</option><option>Chicago, IL</option><option>Other</option></select></label>
+          <label for="bf-heard">How did you hear about us?<select id="bf-heard" name="heard_from">
+            <option value="">Choose one</option><option>Google search or Maps</option><option>Referral</option><option>BuildingConnected or PlanHub</option><option>Social media</option><option>Other</option></select></label>
           <label for="bf-details" class="wide">Project details<textarea id="bf-details" name="details" rows="4" placeholder="Address, square footage, walk date, turnover date"></textarea></label>
         </div>
         <div class="bidform__foot"><button class="btn" type="submit">Send bid request</button><p class="form-status" role="status" aria-live="polite"></p></div>
